@@ -24,11 +24,6 @@ h2 {
   font-size: 12px;
 }
 
-
-
-
-
-
 a {
   color: #555;
   font-size: 15px;
@@ -122,9 +117,9 @@ a:active {
   position: relative;
   float: left;
   font-family: sans-serif;
-  width: 24.5%! important;
+  width: 18%! important;
   height: auto;
-  margin: 2px;
+  margin: 10px;
   padding: 10px;
   border: 1px solid #616161;
   background: rgba( 253, 253, 253, 0.9);
@@ -217,13 +212,13 @@ color: #666;
 
 @media screen and (min-width: 1000px) {
   body {
-    width: 1000px;
+    width: 100%;
   }
 }
 
 @media (max-width: 850px) {
    #element-item {
-  width: 32%! important;
+  width: 80%! important;
 }
 
 }
@@ -283,4 +278,6 @@ h2 {
 
 }
 
+#database{
+  text-align:center;
 }

@@ -7,7 +7,7 @@ $(window).load(function() {
     var timeout;
 
    
-    var public_spreadsheet_url = '1gTPFZQW-dudkakhyIBRZ6nxbW74WweGH7HOag2p_oDc';
+    var public_spreadsheet_url = '1bC6lqdMzva5_def4lZgV0tqbpE5op8_ANhc0EC4Xb-4';
 
 
     var timestampdata = "https://spreadsheets.google.com/feeds/cells/" + public_spreadsheet_url + "/2/public/full?alt=json"
@@ -93,7 +93,7 @@ $(window).load(function() {
 
             // Parses the resulting JSON into the individual squares for each row
 
-            $container.append('<div id="element-item"><div class="category">' + v.filtercategory + '</div><img src="' + v.piclink + '"><div class="name">' + v.title + '</div><div class="colorsubhed">' + v.subhed1 + '</div><div class="boldsubhed">' + v.subhed2 + '</div><div class="description">' + v.description + '</div><div class="boldsubhed">' + v.subhed3 + '</div><div class="readmore">Read <a href="' + v.link + ' " target="_blank">more</a></div></div>');
+            $container.append('<a href="' + v.link + ' " target="_blank"><div id="element-item"><div class="category">' + v.filtercategory + '</div><img src="' + v.piclink + '"><div class="name">' + v.title + '</div><div class="colorsubhed">' + v.subhed1 + '</div><div class="boldsubhed">' + v.subhed2 + '</div><div class="description">' + v.description + '</div><div class="boldsubhed">' + v.subhed3 + '</div><div class="readmore">Read more</div></div></a>');
 
 
             // Gets all unique filtercategory values and puts them into an array
@@ -139,7 +139,6 @@ $(window).load(function() {
                 }
 
             });
-            var pymChild = new pym.Child();
         });
 
 
