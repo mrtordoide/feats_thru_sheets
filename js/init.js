@@ -103,7 +103,7 @@ $(window).load(function() {
 
                 // Creates the filter buttons
 
-                $('#filter').append('<button id="' + v.filtercategory + '" class="btn btn-default" data-value="choice' + count++ + '">' + v.filtercategory + '</button>')
+                $('#filter').append('<div class="btn-group btn-group-lg"><button id="' + v.filtercategory + '" class="btn btn-primary" data-value="choice' + count++ + '">' + v.filtercategory + '</button></div')
 
             }
 
