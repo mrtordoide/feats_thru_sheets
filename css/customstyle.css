@@ -8,6 +8,7 @@ body {
   background-color: #fff;
   text-align: center;
 }
+
 .content{
   padding: 10px;
   background-color: #fff;
@@ -104,6 +105,9 @@ body {
 }
 }
 
+.formatdata{
+ 
+}
 
 
 .banner{
@@ -227,7 +231,7 @@ a:active {
   position: relative;
   text-align: left !important;
   font-family: sans-serif;
-  width: 18%! important;
+  width: 30%! important;
   height: auto;
   margin: 10px;
   padding: 10px;
@@ -339,6 +343,7 @@ body{
 #element-item {
   width: 80%! important;
 }
+
 .bannerspace img{
   width: 20%%;
 }
