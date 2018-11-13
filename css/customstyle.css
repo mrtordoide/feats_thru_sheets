@@ -1,6 +1,7 @@
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5;
+  padding-top: 3.8%;
 }
 #wrapper{
   margin: 0 18% 0 18%;
@@ -332,20 +333,48 @@ color: #666;
 }
 
 @media (max-width: 850px) {
+body{
+  padding-top: 8%;
+}
 #element-item {
   width: 80%! important;
 }
 .bannerspace img{
   width: 20%%;
 }
+
+#wrapper{
+  margin: 0 0 0 0;
 }
 
+.footerspace{
+  padding-left: 2%;
+}
+.quicklink{
+  padding-left: 2%;
+}
+.footer{
+  padding-left: 2%;
+}
+
+}
+
+
+
+
+
+
+
+
 @media (max-width: 550px) {
+body{
+  padding-top: 10.3%;
+}
 #element-item {
   width: 60%! important;
 }
 .bannerspace img{
-  width: 50%;
+  width: 30%;
 }
 .button{
   border-radius: 7px;
@@ -361,6 +390,10 @@ body {
   font-size: 1.0em;
 }
 
+#wrapper{
+  margin: 0 0 0 0;
+}
+
 #element-item .boldsubhed, #element-item .description {
 font-size: 1.0em;
 
@@ -374,9 +407,29 @@ font-size: 1.0em;
   font-size: 1.1em;
 
 }
+
+
+.footerspace{
+  padding-left: 2%;
+}
+.quicklink{
+  padding-left: 2%;
+}
+.footer{
+  padding-left: 2%;
 }
 
+}
+
+
+
+
+
+
 @media (max-width: 320px) {
+body{
+  padding-top:3.8%;
+}
    #element-item {
   width: 100%! important;
 }
@@ -398,11 +451,10 @@ h2 {
 
 #element-item img {
   height: 120px;
-
-
 }
+
 .bannerspace img{
-  width: 20%%;
+  width: 30%%;
 }
 
 #database{
