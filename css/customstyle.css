@@ -22,7 +22,7 @@ body {
   width: 100%;
   height: 10%;
   background-color: #fff;
-  margin-top: 40px;
+  margin-top: 54px;
   padding-left: 18%;
 }
 
@@ -338,16 +338,17 @@ color: #666;
 
 @media (max-width: 850px) {
 body{
-  padding-top: 8%;
 }
 #element-item {
   width: 80%! important;
 }
 
 .bannerspace img{
-  width: 20%%;
+  width: 30%;
 }
-
+.bannerspace{
+  margin-top:54px;
+}
 #wrapper{
   margin: 0 0 0 0;
 }
@@ -373,7 +374,7 @@ body{
 
 @media (max-width: 550px) {
 body{
-  padding-top: 10.3%;
+  padding-top: 40px ;
 }
 #element-item {
   width: 60%! important;
@@ -390,7 +391,9 @@ h2 {
 .btn-default  {
   font-size: 0.9em;
 }
-
+.bannerspace{
+  margin-top: 14px;
+}
 body {
   font-size: 1.0em;
 }
@@ -433,9 +436,8 @@ font-size: 1.0em;
 
 @media (max-width: 320px) {
 body{
-  padding-top:3.8%;
 }
-   #element-item {
+#element-item {
   width: 100%! important;
 }
 
@@ -459,7 +461,7 @@ h2 {
 }
 
 .bannerspace img{
-  width: 30%%;
+  width: 30%;
 }
 
 #database{
