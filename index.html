@@ -89,18 +89,23 @@
 <div id="wrapper">
 <div class="contentbanner">
       <div class="banner">
-          <h2>Welcome to </h2>
+          <h2>Welcome to  </h2>
       </div>
 
 </div>
 <div class="content">
 <!--- Search and filter course categories -->    
 <div class="inputg">
-<div class="input-group">
-  <input class="form-control mr-sm-2" type="text" id="quicksearch" style="border: 2px black solid;" size="50" placeholder="Search for anything related to a tutor (Name, Course, Units, Availability, Phone, etc.)">
-</div>
+
+<div class="input-group input-group-lg">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-lg">QuickSearch</span>
+    </div>
+    <input type="text" id="quicksearch" class="form-control mr-sm-2" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="Enter tutor details here.">
+  </div>
+
 <p>
-  <p>Categorize by Units:</p>
+  <p>Or you can categorize tutors by units:</p>
 <div id="filter" class="row justify-content-md-center btn-group" role="group">
   <button id="allbuttons" class="btn btn-primary is-checked" data-value="*">Show All</button>
 </div>
@@ -121,8 +126,9 @@
 </div>
 <div class="footerspace">
   <h5>Acknowledgement of country</h5>
-  <p>Victoria University acknowledges, recognises and respects the Elders, families and forebears of the Gadigal and Guring-gai <br> people of the Eora Nation who are the traditional owners of University land.</p>
-  <span class="span"></span>
+
+  <p class="ackfoot"> Victoria University acknowledges, recognises and respects the Elders, families and forebears of the Gadigal and Guring-gai people of the Eora Nation who are the traditional owners of University land.
+  </p>
 </div>
 <div class="footer">
     <div class="credit"></div>
