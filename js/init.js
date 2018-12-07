@@ -47,7 +47,7 @@ $(window).load(function() {
             )
 
 
-            $('.updated').append("Last updated " + formatdate)
+            $('.updated').append("Last updated " + formatdate + "Total: ")
         },
     });
 
@@ -95,7 +95,7 @@ $(window).load(function() {
             
             var desc = v.description;
             v.description = desc.replace(/,/g,'<br />');
-            var pic = v.piclink.replace("open", "uc");
+            var pic = v.piclink.replace('open', 'uc');
 
             $container.append('<a href="' + v.link + ' " target="_blank"><div id="element-item"><div class="category">' + v.filtercategory + '</div><img src="' + pic + '"><div class="name">' + v.title + '</div><div class="colorsubhed">' + v.subhed1 + '</div><div class="boldsubhed">' + v.subhed2 + '</div><div class="description">' + v.description + '</div><div class="boldsubhed">' + v.subhed3 + '</div><div class="readmore">Read more</div></div></a>');
 
