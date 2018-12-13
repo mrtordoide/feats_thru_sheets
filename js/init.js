@@ -6,8 +6,7 @@ $(window).load(function() {
     var $container = $('#database')
     var timeout;
 
-   
-    var public_spreadsheet_url = '1kUzp8N2jkZEpAcHZo9gH2Sr8iLmlOs2N7K9po849rtg';
+    var public_spreadsheet_url = '1CjY7r_pGT_HrLDGLzVtsv1Opa1ZmGUbFrmtvxvDEKs4';
 
 
     var timestampdata = "https://spreadsheets.google.com/feeds/cells/" + public_spreadsheet_url + "/2/public/full?alt=json"
