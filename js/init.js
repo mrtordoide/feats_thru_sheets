@@ -46,7 +46,7 @@ $(window).load(function() {
             )
 
 
-            $('.updated').append("Last updated " + formatdate + "Total: ")
+            $('.updated').append("Last updated " + formatdate)
         },
     });
 

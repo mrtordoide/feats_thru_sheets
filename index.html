@@ -17,10 +17,10 @@
         $(function () {
   $('[data-toggle="popover"]').popover()
 })
-          
-        $('.popover-dismiss').popover({
-        trigger: 'focus'
-         })
+
+        $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
         </script> 
 
         <style>
@@ -165,10 +165,13 @@
                 <div style="float: right; padding-right: 15%; padding-top: 4%;">
                           <ul class="nav">
                             <li class="nav-item">
-                              <a class="nav-link nav-link-one" href="https://bit.ly/registertutor">Tutor Sign Up</a>
+                              <a class="nav-link nav-link-one" data-toggle="tooltip" data-placement="bottom" title="Only for tutors approved by the VUS LSU." href="https://amitshrestha.info.np/register/">Tutor Sign Up <i class="fas fa-chevron-circle-down"></i> </a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link nav-link-one" href="#">LSU Login</a>
+                              <a class="nav-link nav-link-one" data-toggle="tooltip" data-placement="bottom" title="We'd love to hear from you. Help us improve!" href="https://amitshrestha.info.np/feedback/">Feedback <i class="fas fa-comment-alt"></i></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link nav-link-one" data-toggle="tooltip" data-placement="bottom" title="Login for LSU team members." href="#">LSU Login <i class="fas fa-chevron-circle-right"></i></a>
                             </li>
                           </ul>
                 </div>
@@ -177,7 +180,7 @@
 <div id="wrapper">
 <div class="contentbanner">
       <div class="banner">
-          <h2>Welcome to  </h2>
+          <h2>Welcome:  </h2>
       </div>
 
 </div>
@@ -186,7 +189,7 @@
 <div class="inputg">
 
     <p>First of all, let's select a suitable 
-        <button type="button" class="btn btn-secondary btn-sm" data-trigger="focus" data-container="body" data-toggle="popover" data-placement="right" title="Course Units" data-html="true" data-content="<table border=1><tr><td>NMIT</td><td> Master of Applied IT</td></tr><tr><td>NBIT</td><td>Bachelor of IT</td></tr><tr><td>BBNS / BBUS </td><td>Bachelor of Business</td></tr><tr><td>BMES</td><td>Master of Business(ERP)</td></tr><tr><td>BGEP</td><td>Graduate Diploma of Business(ERP) </td></tr><tr><td>BGAP</td><td>Graduate Diploma in Professional Accounting</td></tr><tr><td>AST</td><td>Academic Skills Tutor/General Advice </td></tr></table>">
+        <button type="button" class="btn btn-secondary btn-sm" data-trigger="hover" data-container="body" data-toggle="popover" data-placement="right" title="Course Units" data-html="true" data-content="<table border=1><tr><td>NMIT</td><td> Master of Applied IT</td></tr><tr><td>NBIT</td><td>Bachelor of IT</td></tr><tr><td>BBNS / BBUS </td><td>Bachelor of Business</td></tr><tr><td>BMES</td><td>Master of Business(ERP)</td></tr><tr><td>BGEP</td><td>Graduate Diploma of Business(ERP) </td></tr><tr><td>BGAP</td><td>Graduate Diploma in Professional Accounting</td></tr><tr><td>AST</td><td>Academic Skills Tutor/General Advice </td></tr></table>">
             course code (?)
           </button>
     </p>
