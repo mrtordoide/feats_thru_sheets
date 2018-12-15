@@ -121,6 +121,10 @@ body {
   z-index: -100
 }
 
+.sub-nav{
+  float: right; margin-right: 12%; margin-top: 4%; display: block;
+}
+
 
 .slide {
   animation-name: slide;
@@ -389,14 +393,17 @@ body{
 }
 
 .bannerspace img{
-  width: 30%;
+  width: 25%;
+  float: center;
 }
 .bannerspace{
   margin-top:54px;
+  height: 11em;
 }
 #wrapper{
   margin: 0 0 0 0;
 }
+
 
 .footerspace{
   padding-left: 2%;
@@ -424,9 +431,7 @@ body{
 #element-item {
   width: 60%! important;
 }
-.bannerspace img{
-  width: 30%;
-}
+
 .button{
   border-radius: 7px;
 }
@@ -438,9 +443,14 @@ h2 {
 }
 .bannerspace{
   margin-top: 14px;
+  height: 8em;
 }
 body {
   font-size: 1.0em;
+}
+
+.sub-nav{
+  float: left; margin: 0px;
 }
 
 #wrapper{
@@ -497,6 +507,10 @@ body{
   font-size: 0.7em;
 }
 
+.sub-nav{
+  float: left; margin: 0px;
+}
+
 body {
   font-size: 1.3em;
 }
@@ -509,8 +523,11 @@ h2 {
   height: 120px;
 }
 
+
+
 .bannerspace img{
   width: 30%;
+  float: center;
 }
 
 #database{

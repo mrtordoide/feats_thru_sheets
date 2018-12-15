@@ -13,16 +13,14 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
         <script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
 
-        $(function () {
-  $('[data-toggle="popover"]').popover()
-})
-
-        $(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();   
+$(document).ready(function(){
+$('[data-toggle="tooltip"]').tooltip();   
 });
         </script> 
 
@@ -80,11 +78,15 @@
 }
 
 .nav-link-one{
-  margin: 2px;
+  padding: 8px;
+  margin: 4px;
+  text-decoration: none;
+
 }
 .nav-link-one:hover {
   background-color: #00609a;
   color: white;
+  text-decoration: none;
 }
 .active-link{
   color: white;
@@ -163,21 +165,16 @@
             </nav>
 
     <div class="bannerspace">
-        <a href="https://amitshrestha.info.np/vusydneytutors"><img src="img/vu.jpg"></a>
+<a href="https://amitshrestha.info.np/vusydneytutors"><img src="img/vu.jpg"></a>
+      <div class="row sub-nav">
+        <div class="col-lg sub-nav">
+          <a class="nav-link-one" data-toggle="tooltip" data-placement="bottom" title="Only for tutors approved by the VUS LSU." href="https://amitshrestha.info.np/vusydneytutors/register/">Tutor Sign Up <i class="fas fa-chevron-circle-down"></i> </a>
 
-                <div style="float: right; padding-right: 15%; padding-top: 4%;">
-                          <ul class="nav">
-                            <li class="nav-item">
-                              <a class="nav-link nav-link-one" data-toggle="tooltip" data-placement="bottom" title="Only for tutors approved by the VUS LSU." href="https://amitshrestha.info.np/vusydneytutors/register/">Tutor Sign Up <i class="fas fa-chevron-circle-down"></i> </a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link nav-link-one" data-toggle="tooltip" data-placement="bottom" title="We'd love to hear from you. Help us improve!" href="https://amitshrestha.info.np/vusydneytutors/feedback/">Feedback <i class="fas fa-comment-alt"></i></a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link nav-link-one" data-toggle="tooltip" data-placement="bottom" title="Login for LSU team members." href="#">LSU Login <i class="fas fa-chevron-circle-right"></i></a>
-                            </li>
-                          </ul>
-                </div>
+                              <a class="nav-link-one" data-toggle="tooltip" data-placement="bottom" title="We'd love to hear from you. Help us improve!" href="https://amitshrestha.info.np/vusydneytutors/feedback/">Feedback <i class="fas fa-comment-alt"></i></a>
+
+                              <a class="nav-link-one" data-toggle="tooltip" data-placement="bottom" title="Login for LSU team members." href="#">LSU Login <i class="fas fa-chevron-circle-right"></i></a>
+        </div>
+      </div>
     </div>
       
 <div id="wrapper">
@@ -192,9 +189,9 @@
 <div class="inputg">
 
     <p>First of all, let's select a suitable 
-        <button type="button" class="btn btn-secondary btn-sm" data-trigger="hover" data-container="body" data-toggle="popover" data-placement="right" title="Course Units" data-html="true" data-content="<table border=1><tr><td>NMIT</td><td> Master of Applied IT</td></tr><tr><td>NBIT</td><td>Bachelor of IT</td></tr><tr><td>BBNS / BBUS </td><td>Bachelor of Business</td></tr><tr><td>BMES</td><td>Master of Business(ERP)</td></tr><tr><td>BGEP</td><td>Graduate Diploma of Business(ERP) </td></tr><tr><td>BGAP</td><td>Graduate Diploma in Professional Accounting</td></tr><tr><td>AST</td><td>Academic Skills Tutor/General Advice </td></tr></table>">
+      <a tabindex="0" class="btn btn-sm btn-secondary" role="button" data-toggle="popover" data-html="true" title="Course Codes" data-content="<table border=1><tr><td>NMIT</td><td> Master of Applied IT</td></tr><tr><td>NBIT</td><td>Bachelor of IT</td></tr><tr><td>BBNS / BBUS </td><td>Bachelor of Business</td></tr><tr><td>BMES</td><td>Master of Business(ERP)</td></tr><tr><td>BGEP</td><td>Graduate Diploma of Business(ERP) </td></tr><tr><td>BGAP</td><td>Graduate Diploma in Professional Accounting</td></tr><tr><td>AST</td><td>Academic Skills Tutor/General Advice </td></tr></table>">
             course code (?)
-          </button>
+          </a>
     </p>
     <div id="filter" class="row justify-content-md-center btn-group" role="group">
       <button id="allbuttons" class="btn btn-primary is-checked" data-value="*">Show All</button>
